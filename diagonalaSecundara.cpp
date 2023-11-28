@@ -31,14 +31,14 @@ int main()
 			{
 				s[i][j] = s[i][j-1]
 				          + a[i][j-1]
-					        + a[i-1][j];
+					  + a[i-1][j];
 			}
 			else
 			{
 				s[i][j] = s[i][j-1]
 				          + s[i-1][j+1]
-					        - s[i-1][j]
-					        + a[i][j-1];
+					  - s[i-1][j]
+					  + a[i][j-1];
 			}
 		}
 	}
@@ -52,3 +52,4 @@ int main()
 	}
 	return 0;
 }
+
